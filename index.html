@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danny Valverde - Software Engineer</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="resume-container">
+        <header>
+            <h1>Danny Valverde</h1>
+            <p class="contact-info">
+                San Antonio, TX | (915) 861-1811 | <a href="mailto:dvalve27@gmail.com">dvalve27@gmail.com</a>
+            </p>
+        </header>
+
+        <section>
+            <h2>Experience</h2>
+            
+            <div class="job">
+                <div class="job-header">
+                    <strong>H-E-B</strong>
+                    <span>San Antonio, TX</span>
+                </div>
+                <div class="job-sub">
+                    <em>Software Engineer</em>
+                    <span>11/2021 - Present</span>
+                </div>
+                <ul>
+                    <li>Migrated high-cost legacy Platform to custom open-source, reducing licensing overhead by over $5M/year.</li>
+                    <li>Modernized infrastructure from Waterfall to Agile using Infrastructure as Code (IaC).</li>
+                    <li>Defined SDLC stages and CI/CD pipelines with automated validation gates.</li>
+                    <li>Managed infrastructure across 1,100+ hypervisors and 380+ distributed sites.</li>
+                    <li>Architected site reliability platforms focusing on isolation event sequences and automated recovery.</li>
+                    <li>Contributed to open-source stability by identifying and patching upstream bugs.</li>
+                    <li>Engineered a fully PCI-compliant platform using open-source tools.</li>
+                    <li>Owned unified platform Observability, automating the pipeline from alerting to incident creation.</li>
+                </ul>
+                <p class="stack"><strong>Stack:</strong> Python, Ansible, Docker, Linux (Rocky), MariaDB, Redis, Nova (Libvirt), HAProxy, Vault, GitLab, Bash, Datadog, Foreman.</p>
+            </div>
+
+            <div class="job">
+                <div class="job-sub">
+                    <em>Compliance Engineer</em>
+                    <span>07/2018 – 10/2021</span>
+                </div>
+                <ul>
+                    <li>Developed custom Fortinet firewall tooling using Python and Jenkins for PCI enforcement.</li>
+                    <li>Conducted internal audits and provided automated PCI evidence collection.</li>
+                    <li>Mentored junior engineers and interns, providing technical oversight.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <strong>B.E.A.T LLC</strong>
+                    <span>San Antonio, TX</span>
+                </div>
+                <div class="job-sub">
+                    <em>VMware Engineer</em>
+                    <span>02/2017 - 06/2018</span>
+                </div>
+                <ul>
+                    <li>Designed and deployed a disaster recovery (DR) site for seamless failover.</li>
+                    <li>Automated security hardening via PowerShell/PowerCLI, increasing compliance from 60% to 98%.</li>
+                    <li>Served as Technical Lead for enterprise-wide infrastructure enhancements.</li>
+                </ul>
+            </div>
+            
+            </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="edu-item">
+                <div class="job-header">
+                    <strong>Texas A&M</strong>
+                    <span>San Antonio, TX</span>
+                </div>
+                <p>B.B.A. Computer Information Systems (08/2013 - 08/2016)</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Community Engagement</h2>
+            <div class="job">
+                <div class="job-header">
+                    <strong>Ridgestone HOA</strong>
+                    <span>Board Member</span>
+                </div>
+                <p>Manage annual budgets and coordinate large-scale neighborhood functions (07/2021 - Present).</p>
+            </div>
+        </section>
+    </div>
+    <p>Visitor Count: <span id="counter">Loading...</span></p>
+
+    <script src="config.js"></script>
+    <script>
+        // Manually trigger it if the auto-load fails
+        if (typeof incrementCounter === "function") {
+            incrementCounter();
+        } else {
+            console.error("config.js failed to load or incrementCounter is missing");
+        }
+    </script>
+</body>
+</html>
