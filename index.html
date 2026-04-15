@@ -3,92 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danny Valverde - Software Engineer</title>
+    <title>Danny Valverde Resume</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div class="resume-container">
+    <div class="container">
         <header>
-            <h1>Danny Valverde</h1>
-            <p class="contact-info">
-                San Antonio, TX | (915) 861-1811 | <a href="mailto:dvalve27@gmail.com">dvalve27@gmail.com</a>
-            </p>
+            <h1>Danny Valverde </h1>
+            <p>San Antonio, TX | <a href="mailto:dvalve27@gmail.com">dvalve27@gmail.com</a> </p>
         </header>
 
-        <section>
-            <h2>Experience</h2>
-            
-            <div class="job">
-                <div class="job-header">
-                    <strong>H-E-B</strong>
-                    <span>San Antonio, TX</span>
-                </div>
-                <div class="job-sub">
-                    <em>Software Engineer</em>
-                    <span>11/2021 - Present</span>
-                </div>
+        <section id="projects">
+            <h2>Projects </h2>
+            <div class="entry">
+                <h3>Cloud Resume Challenge </h3>
                 <ul>
-                    <li>Migrated high-cost legacy Platform to custom open-source, reducing licensing overhead by over $5M/year.</li>
-                    <li>Modernized infrastructure from Waterfall to Agile using Infrastructure as Code (IaC).</li>
-                    <li>Defined SDLC stages and CI/CD pipelines with automated validation gates.</li>
-                    <li>Managed infrastructure across 1,100+ hypervisors and 380+ distributed sites.</li>
-                    <li>Architected site reliability platforms focusing on isolation event sequences and automated recovery.</li>
-                    <li>Contributed to open-source stability by identifying and patching upstream bugs.</li>
-                    <li>Engineered a fully PCI-compliant platform using open-source tools.</li>
-                    <li>Owned unified platform Observability, automating the pipeline from alerting to incident creation.</li>
+                    <li>Built a distributed "headless" app over a weekend to see how far I could push a local AI-assisted workflow. </li>
+                    <li>Split the project into two automated workstreams: A Backend (Python/Lambda/DynamoDB) and a Frontend (React/S3/CloudFront). </li>
+                    <li>Automated the whole stack with Terraform, using GitHub Actions and OIDC so I never have to touch the AWS console or deal with manual credentials. </li>
+                    <li>Used a local LLM (via OpenCode) as a "pair programmer" to rapidly prototype the architecture and clear technical hurdles in record time. </li>
                 </ul>
-                <p class="stack"><strong>Stack:</strong> Python, Ansible, Docker, Linux (Rocky), MariaDB, Redis, Nova (Libvirt), HAProxy, Vault, GitLab, Bash, Datadog, Foreman.</p>
-            </div>
-
-            <div class="job">
-                <div class="job-sub">
-                    <em>Compliance Engineer</em>
-                    <span>07/2018 – 10/2021</span>
-                </div>
-                <ul>
-                    <li>Developed custom Fortinet firewall tooling using Python and Jenkins for PCI enforcement.</li>
-                    <li>Conducted internal audits and provided automated PCI evidence collection.</li>
-                    <li>Mentored junior engineers and interns, providing technical oversight.</li>
-                </ul>
-            </div>
-
-            <div class="job">
-                <div class="job-header">
-                    <strong>B.E.A.T LLC</strong>
-                    <span>San Antonio, TX</span>
-                </div>
-                <div class="job-sub">
-                    <em>VMware Engineer</em>
-                    <span>02/2017 - 06/2018</span>
-                </div>
-                <ul>
-                    <li>Designed and deployed a disaster recovery (DR) site for seamless failover.</li>
-                    <li>Automated security hardening via PowerShell/PowerCLI, increasing compliance from 60% to 98%.</li>
-                    <li>Served as Technical Lead for enterprise-wide infrastructure enhancements.</li>
-                </ul>
-            </div>
-            
-            </section>
-
-        <section>
-            <h2>Education</h2>
-            <div class="edu-item">
-                <div class="job-header">
-                    <strong>Texas A&M</strong>
-                    <span>San Antonio, TX</span>
-                </div>
-                <p>B.B.A. Computer Information Systems (08/2013 - 08/2016)</p>
             </div>
         </section>
 
-        <section>
-            <h2>Community Engagement</h2>
-            <div class="job">
-                <div class="job-header">
-                    <strong>Ridgestone HOA</strong>
-                    <span>Board Member</span>
+        <section id="experience">
+            <h2>Experience </h2>
+            
+            <div class="entry">
+                <div class="entry-header">
+                    <strong>H-E-B – San Antonio, TX </strong>
+                    <span>11/2021 - Present </span>
                 </div>
-                <p>Manage annual budgets and coordinate large-scale neighborhood functions (07/2021 - Present).</p>
+                <div class="job-title">Software Engineer </div>
+                <ul>
+                    <li>Orchestrated the full migration of a high-cost legacy Platform to a custom open-source platform, significantly reducing licensing overhead and improving system flexibility. </li>
+                    <li>Modernized infrastructure methodology from legacy waterfall to Agile, leveraging Infrastructure as Code (IaC) to accelerate deployment cycles. </li>
+                    <li>Defined SDLC stages and CI/CD pipelines within a multi-stakeholder environment, ensuring production releases were validated through rigorous automated gates. </li>
+                    <li>Managed large-scale infrastructure using IaC across 1,100+ hypervisors and 380+ distributed sites. </li>
+                    <li>Architected site reliability and orchestration platforms, specifically focusing on isolation event sequences and automated recovery. </li>
+                    <li>Contributed to open-source stability by identifying upstream bugs and applying patches in local builds to resolve critical production issues. </li>
+                    <li>Engineered a fully PCI-compliant platform using open-source tools, applying deep regulatory knowledge to ensure data security. </li>
+                    <li>Owned unified platform Observability, automating the pipeline from alerting to incident creation; tracked KPIs including MTTR, volume, and repeat offenders.</li>
+                    <li>Owned end-to-end testing for service and functionality with smoke tests, regressions tests, and full test suites. </li>
+                    <li><strong>Stack:</strong> Python, Ansible, Docker, Linux (Rocky), MariaDB, Redis, Nova (Libvirt), HAProxy, Vault, GitLab, Bash, Datadog, Foreman. </li>
+                </ul>
+
+                <div class="job-title">Compliance Engineer </div>
+                <div class="date-sub">07/2018 – 10/2021 </div>
+                <ul>
+                    <li>Spearheaded the automation of PCI regulatory enforcement, leveraging Python-based tooling and CI/CD pipelines to ensure continuous compliance across enterprise firewall infrastructure. </li>
+                    <li>Directed comprehensive internal audits and gap analyses, serving as the primary liaison for stakeholders while deploying automated solutions for real-time compliance monitoring and documentation. </li>
+                    <li>Served as a Technical Mentor and Lead, overseeing the technical output of junior engineers and managing project resource allocation to ensure the successful delivery of complex security initiatives. </li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <strong>B.E.A.T LLC – San Antonio, TX </strong>
+                    <span>02/2017 - 06/2018 </span>
+                </div>
+                <div class="job-title">VMware Engineer </div>
+                <ul>
+                    <li>Architected and executed a comprehensive Disaster Recovery (DR) strategy, designing a high-availability secondary site that ensured zero-loss failover and business continuity for mission-critical services. </li>
+                    <li>Spearheaded a security-first automation initiative, utilizing PowerCLI to programmatically apply STIG hardening across the environment, resulting in a 38% measurable increase in audit readiness. </li>
+                    <li>Led the technical vision for enterprise infrastructure enhancements, serving as the primary authority for hardware and software lifecycle management and site-wide upgrades. </li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <strong>CloudWave – San Antonio, TX </strong>
+                    <span>04/2016 - 02/2017 </span>
+                </div>
+                <div class="job-title">Cloud Administrator </div>
+                <ul>
+                    <li>Served as the Technical Lead for large-scale data migrations and business continuity planning, specifically tailored for healthcare providers operating in natural disaster corridors. </li>
+                    <li>Modernized infrastructure-as-code (IaC) capabilities by optimizing PowerCLI tooling, which reduced VPDC deployment timelines by 20% and improved resource predictability. </li>
+                    <li>Maintained federal and healthcare regulatory compliance (HIPAA) by engineering a defense-in-depth strategy involving robust encryption and rigorous access control audits. </li>
+                    <li>Directed international technical engagements, leveraging bilingual proficiency to manage stakeholder relationships and complex support operations across LATAM/Spanish-speaking regions. </li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <strong>Accenture – San Antonio, TX </strong>
+                    <span>11/2014 - 10/2014 (Combined Roles) </span>
+                </div>
+                <div class="job-title">Infrastructure Engineer </div>
+                <div class="date-sub">11/2014 - 04/2016 </div>
+                <ul>
+                    <li>Architected automated infrastructure-as-service tools within VMware environments, streamlining the provisioning lifecycle and hardening system integrity through automated vulnerability management. </li>
+                    <li>Led a "Zero-Toil" initiative, automating legacy maintenance tasks including snapshot cleanups and patch deployments, which reclaimed 20% of operational capacity for the engineering team. </li>
+                    <li>Standardized technical governance by authoring a comprehensive library of SOPs, effectively upskilling junior engineers and establishing a scalable framework for independent task execution. </li>
+                </ul>
+                <div class="job-title">Monitoring Administrator </div>
+                <div class="date-sub">09/2013 - 10/2014 </div>
+                <ul>
+                    <li>Architected an enterprise-wide network observability framework through the implementation of WhatsUp Gold, delivering 24/7 visibility into system health and utilization. </li>
+                    <li>This initiative enabled data-driven decision-making and significantly reduced MTTR through automated degradation alerts. </li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <strong>GECU – El Paso, TX </strong>
+                    <span>01/2011 - 08/2013 </span>
+                </div>
+                <div class="job-title">System Administrator </div>
+                <ul>
+                    <li>Directed a multi-site hardware modernization initiative, overseeing the end-to-end deployment of 700+ endpoints across 13 regional locations. </li>
+                    <li>Managed the full project lifecycle—from master image architecture and NIST-compliant security hardening to physical rollout—ensuring zero downtime for critical operations. </li>
+                    <li>Developed and executed an enterprise-wide asset disposal strategy, optimizing the lifecycle of legacy hardware through profitable vendor negotiations and sustainable recycling initiatives that exceeded annual fiscal targets. </li>
+                    <li>Maintained core domain services (Active Directory, DNS, DHCP, GPO) and successfully executed domain functional level upgrades. </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education </h2>
+            <div class="entry">
+                <div class="entry-header">
+                    <strong>Texas A&M – San Antonio, TX </strong>
+                    <span>08/2013 - 08/2016 </span>
+                </div>
+                <p>B.B.A. Computer Information Systems </p>
+            </div>
+            <div class="entry">
+                <div class="entry-header">
+                    <strong>El Paso Community College – El Paso, TX </strong>
+                    <span>08/2009 - 05/2011 </span>
+                </div>
+                <p>A.A. Business </p>
+            </div>
+        </section>
+
+        <section id="community">
+            <h2>Community Engagement </h2>
+            <div class="entry">
+                <div class="entry-header">
+                    <strong>Ridgestone HOA – Board Member </strong>
+                    <span>07/2021 - Present </span>
+                </div>
+                <ul>
+                    <li>Administer a multi-annual capital budget, prioritizing fiscal allocations for large-scale community infrastructure projects and security enhancements while maintaining a 100% solvency rate. </li>
+                    <li>Direct end-to-end event operations and community programming, managing vendor contracts and project timelines to ensure high engagement within budgetary constraints. </li>
+                    <li>Serve as a Strategic Liaison between homeowners and civil contractors, managing conflict resolution and providing transparent communication regarding safety protocols and regulatory decisions. </li>
+                </ul>
             </div>
         </section>
     </div>
